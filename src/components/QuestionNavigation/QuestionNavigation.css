@@ -46,6 +46,12 @@
     background-color: #0056b3;
 }
 
+.button:disabled{
+    cursor: not-allowed;
+}
+
+
+
 
 .grid-container {
     display: grid;

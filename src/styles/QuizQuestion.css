@@ -19,6 +19,9 @@
     transition: background-color 0.3s ease;
 }
 
+
+
+
 .option-button.correct {
     background-color: #4CAF50; /* Green for correct answers */
     color: white;
@@ -31,6 +34,7 @@
 
 .option-button:disabled {
     opacity: 0.6;
+
     cursor: not-allowed;
 }
 

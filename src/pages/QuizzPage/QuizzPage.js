@@ -1,12 +1,12 @@
 /*QuizzPage.js*/
 import React, { useState } from 'react';
-import QuizService from '../services/QuizService';
-import QuizQuestion from '../components/QuizQuestion';
-import Popup from '../components/Popup';
-import Timer from '../components/Timer';
-import Button from '../components/Button/Button';
-import QuestionNavigation from '../components/QuestionNavigation/QuestionNavigation';
-import '../styles/Quiz.css';
+import QuizService from '../../services/QuizService';
+import QuizQuestion from '../../components/QuizQuestion';
+import Popup from '../../components/Popup';
+import Timer from '../../components/Timer';
+import Button from '../../components/Button/Button';
+import QuestionNavigation from '../../components/QuestionNavigation/QuestionNavigation';
+import '../../styles/Quiz.css';
 
 const Quiz = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -16,6 +16,11 @@ const Quiz = () => {
     const [quizFinished, setQuizFinished] = useState(false);
     const quizService = new QuizService();
     const quizList = quizService.getQuizList();
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [isAnswered, setIsAnswered] = useState(false);
+    const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
+
+
 
     const initialQuizTime = 30 * 60;
 
@@ -32,11 +37,21 @@ const Quiz = () => {
     };
 
     const handleAnswer = (selectedIndex) => {
-        const question = quizList[currentQuestion];
-        const questionScore = question.scores[selectedIndex];
-        setScore((prevScore) => prevScore + questionScore);
+        setSelectedAnswer(selectedIndex);
+        setIsAnswered(true);
+    };
 
+    const submitAnswer = () => {
+        if (selectedAnswer !== null) {
+            const question = quizList[currentQuestion];
+            const questionScore = question.scores[selectedAnswer];
+            setScore((prevScore) => prevScore + questionScore);
+        }
+
+        // Show correct answer for 2 seconds
+        setShowCorrectAnswer(true);
         setTimeout(() => {
+            setShowCorrectAnswer(false);
             setCurrentQuestion((prevQuestion) => {
                 if (prevQuestion + 1 < quizList.length) {
                     return prevQuestion + 1;
@@ -45,8 +60,14 @@ const Quiz = () => {
                     return prevQuestion;
                 }
             });
-        }, 1000);
+
+            // Reset selected answer and button states
+            setSelectedAnswer(null);
+            setIsAnswered(false);
+        }, 2000);
     };
+
+
 
     const handleSkipQuestion = () => {
         if (currentQuestion < quizList.length - 1) {
@@ -96,7 +117,9 @@ const Quiz = () => {
                             <QuizQuestion
                                 question={quizList[currentQuestion]}
                                 onAnswer={handleAnswer}
+                                showCorrectAnswer={showCorrectAnswer}
                             />
+
                         ) : (
                             <div className="score-section">
                                 <h2>Quiz Completed!</h2>
@@ -114,11 +137,14 @@ const Quiz = () => {
                         goToQuestion={goToQuestion}
                         hidden={menuHidden}
                         toggleMenu={toggleMenu}
-                        quizList = {quizList}
-                        quizFinished = {quizFinished}
-                        handleSkipQuestion = {handleSkipQuestion}
-                        handleFinishQuiz = {handleFinishQuiz}
+                        quizList={quizList}
+                        quizFinished={quizFinished}
+                        handleSkipQuestion={handleSkipQuestion}
+                        handleFinishQuiz={handleFinishQuiz}
+                        handleAnswer={submitAnswer}
+                        isAnswered={isAnswered}
                     />
+
 
 
                 </div>
