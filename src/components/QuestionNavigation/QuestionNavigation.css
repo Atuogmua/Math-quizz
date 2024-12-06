@@ -1,13 +1,13 @@
 .question-navigation {
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: row;  /* Stack items vertically */
-    align-self: center;
-    justify-content: center;
+    align-self: left;
+    justify-content: left;
     height: auto;  /* Allow height to adjust based on content */
     position: static;
     box-sizing: border-box;
-    gap: 20px;
+    gap: 5px;
 }
 
 .question-navigation.hidden .grid-container {
@@ -23,8 +23,8 @@
 .button-wrapper {
     display: flex;
     flex-direction: column; /* Align buttons horizontally */
-    justify-content: start; /* Center horizontally */
-    align-items: start; /* Center vertically */
+    justify-content: left; /* Center horizontally */
+    align-items: left; /* Center vertically */
     position: static;
 }
 
@@ -40,6 +40,7 @@
     cursor: pointer;
     text-align: center;
     font-size: 14px; /* Adjust font size */
+
 }
 
 .button:hover, .toggle-button:hover  {
@@ -51,8 +52,6 @@ button:disabled {
     cursor: not-allowed;
     opacity: 0.6;
 }
-
-
 
 
 

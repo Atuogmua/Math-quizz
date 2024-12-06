@@ -18,7 +18,10 @@ const QuestionNavigation = ({
                             }) => {
     return (
         <div className={`question-navigation ${hidden ? 'hidden' : ''}`}>
+            {!quizFinished && ( // Render buttons only if the quiz is not finished
+                <>
             <div className="button-wrapper">
+
                 <button className="toggle-button" onClick={toggleMenu}>
                     {hidden ? 'Show Menu' : 'Hide Menu'}
                 </button>
@@ -40,20 +43,24 @@ const QuestionNavigation = ({
                     </div>
                 )}
             </div>
-            <Button
-                label="Next"
-                onClick={() => handleAnswer()} // Call `handleAnswer` on click
-                disabled={!isAnswered} // Disable until an answer is selected
-            />
-            <Button
-                label="Skip"
-                onClick={() => handleSkipQuestion()}
-                disabled={currentQuestion >= quizList.length - 1 || quizFinished}
-            />
-            <Button
-                label="Finish Quiz"
-                onClick={() => handleFinishQuiz()}
-            />
+
+
+                    <Button
+                        label="Next"
+                        onClick={() => handleAnswer()} // Call `handleAnswer` on click
+                        disabled={!isAnswered} // Disable until an answer is selected
+                    />
+                    <Button
+                        label="Skip"
+                        onClick={() => handleSkipQuestion()}
+                        disabled={currentQuestion >= quizList.length - 1}
+                    />
+                    <Button
+                        label="Finish Quiz"
+                        onClick={() => handleFinishQuiz()}
+                    />
+                </>
+            )}
         </div>
     );
 };

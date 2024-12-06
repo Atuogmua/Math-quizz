@@ -7,11 +7,6 @@ const ResourcePanel = ({ resource }) => {
 
     return (
         <div className="resource-panel">
-            <h3>Helpful Resource</h3>
-            <h4>{resource.title}</h4>
-            <a href={resource.url} target="_blank" rel="noopener noreferrer">
-                {resource.url}
-            </a>
             <div className="resource-preview">
                 <iframe
                     src={resource.url}

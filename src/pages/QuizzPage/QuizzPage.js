@@ -12,19 +12,17 @@ import '../../styles/Quiz.css';
 
 const Quiz = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [menuHidden, setMenuHidden] = useState(true); // State to manage menu visibility
+    const [menuHidden, setMenuHidden] = useState(true);
     const [score, setScore] = useState(0);
     const [showPopup, setShowPopup] = useState(true);
     const [quizFinished, setQuizFinished] = useState(false);
+    const [answeredQuestions, setAnsweredQuestions] = useState([]); // Track answered questions
     const quizService = new QuizService();
     const quizList = quizService.getQuizList();
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isAnswered, setIsAnswered] = useState(false);
     const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
     const [currentResource, setCurrentResource] = useState(null);
-
-
-
 
     const initialQuizTime = 30 * 60;
 
@@ -34,6 +32,8 @@ const Quiz = () => {
 
     const goToQuestion = (index) => {
         setCurrentQuestion(index);
+        setCurrentResource(null); // Clear the resource panel when navigating to a different question
+
     };
 
     const toggleMenu = () => {
@@ -51,14 +51,21 @@ const Quiz = () => {
             const questionScore = question.scores[selectedAnswer];
             setScore((prevScore) => prevScore + questionScore);
 
-            // If the answer is wrong, set the resource data
+            // If the answer is wrong, get the explanation URL
             if (questionScore === 0) {
-                const skillLevel = question.skill_level;
-                const resource = resourceData.find((res) => res.skill_level === skillLevel);
-                setCurrentResource(resource);
+                const explanation = resourceData[question.question]?.url;
+                if (explanation) {
+                    setCurrentResource({
+                        title: `Explanation for: ${question.question}`,
+                        url: explanation,
+                    });
+                }
             } else {
                 setCurrentResource(null); // Clear resource if correct
             }
+
+            // Mark the current question as answered
+            setAnsweredQuestions((prev) => [...prev, currentQuestion]);
         }
 
         // Show correct answer for 2 seconds
@@ -84,21 +91,27 @@ const Quiz = () => {
     const handleSkipQuestion = () => {
         if (currentQuestion < quizList.length - 1) {
             setCurrentQuestion((prevQuestion) => prevQuestion + 1);
+            setCurrentResource(null); // Hide the resource panel
         } else {
             setQuizFinished(true);
         }
     };
 
+
     const handleFinishQuiz = () => {
         setQuizFinished(true);
+        setCurrentResource(null); // Hide the resource panel
     };
 
+
     const restartQuiz = () => {
-        setCurrentQuestion(0);
-        setScore(0);
-        setShowPopup(true);
-        setQuizFinished(false);
+        setCurrentQuestion(0); // Reset to the first question
+        setScore(0);           // Reset the score
+        setShowPopup(true);    // Show the initial popup again
+        setQuizFinished(false); // Mark the quiz as not finished
+        setAnsweredQuestions([]); // Clear the answered questions array
     };
+
 
     return (
         <div className="quiz-wrapper">
@@ -129,7 +142,9 @@ const Quiz = () => {
                                 question={quizList[currentQuestion]}
                                 onAnswer={handleAnswer}
                                 showCorrectAnswer={showCorrectAnswer}
+                                isDisabled={answeredQuestions.includes(currentQuestion)} // Disable if already answered
                             />
+
                         ) : (
                             <div className="score-section">
                                 <h2>Quiz Completed!</h2>
@@ -144,7 +159,7 @@ const Quiz = () => {
                     <QuestionNavigation
                         questions={quizList}
                         currentQuestion={currentQuestion}
-                        goToQuestion={goToQuestion}
+                        goToQuestion={goToQuestion} // Pass the updated function
                         hidden={menuHidden}
                         toggleMenu={toggleMenu}
                         quizList={quizList}
@@ -154,6 +169,7 @@ const Quiz = () => {
                         handleAnswer={submitAnswer}
                         isAnswered={isAnswered}
                     />
+
                 </div>
             </div>
         </div>

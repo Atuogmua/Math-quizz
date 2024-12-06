@@ -3,7 +3,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 20%;
+    width: 50%;
     height: 100%;
     background-color: #f9f9f9;
     border-right: 1px solid #ddd;
@@ -33,7 +33,7 @@
     margin-top: 10px;
     border: 1px solid #ddd;
     overflow: hidden;
-    height: 200px; /* Adjust height as needed */
+    height: 100%; /* Adjust height as needed */
 }
 
 .resource-iframe {
