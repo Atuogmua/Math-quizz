@@ -20,6 +20,11 @@
 }
 
 
+.option-button.selected {
+    background-color: #ffcc00; /* Yellow or any color for the selected state */
+    color: #000; /* Adjust text color for contrast */
+    border: 2px solid #ffa500; /* Optional: Add a border */
+}
 
 
 .option-button.correct {

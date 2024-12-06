@@ -95,7 +95,7 @@ const Quiz = () => {
                     onClose={() => setShowPopup(false)}
                     time="30 minutes"
                     totalQuestions={quizService.getTotalQuestions()}
-                    rules="Answer each question within the time limit."
+                    rules="Answer each question within the time limit. To count the answer, press the Next button."
                 />
             )}
 
@@ -119,7 +119,6 @@ const Quiz = () => {
                                 onAnswer={handleAnswer}
                                 showCorrectAnswer={showCorrectAnswer}
                             />
-
                         ) : (
                             <div className="score-section">
                                 <h2>Quiz Completed!</h2>

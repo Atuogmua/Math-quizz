@@ -27,9 +27,10 @@ const QuestionNavigation = ({ questions, currentQuestion, goToQuestion, hidden, 
             </div>
             <Button
                 label="Next"
-                onClick={() => handleAnswer()} // This will call submitAnswer
-                disabled={!isAnswered} // Only enabled if an answer is selected
+                onClick={() => handleAnswer()} // This calls `submitAnswer`
+                disabled={!isAnswered} // Disable until an answer is selected
             />
+
 
             <Button
                 label="Skip"
