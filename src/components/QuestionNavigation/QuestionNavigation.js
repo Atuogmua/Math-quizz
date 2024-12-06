@@ -14,7 +14,8 @@ const QuestionNavigation = ({
                                 handleSkipQuestion,
                                 handleFinishQuiz,
                                 handleAnswer,
-                                isAnswered
+                                isAnswered,
+                                answeredQuestions
                             }) => {
     return (
         <div className={`question-navigation ${hidden ? 'hidden' : ''}`}>
@@ -30,7 +31,13 @@ const QuestionNavigation = ({
                         {questions.map((_, index) => (
                             <div
                                 key={index}
-                                className={`grid-item ${index === currentQuestion ? 'active' : ''} ${index > currentQuestion ? 'disabled' : ''}`}
+                                className={`grid-item ${index === currentQuestion ? 'active' : ''} ${index > currentQuestion ? 'disabled' : ''}${
+                                    answeredQuestions[index] === 'correct'
+                                        ? 'correct-answer'
+                                        : answeredQuestions[index] === 'incorrect'
+                                            ? 'incorrect-answer'
+                                            : ''
+                                }`}
                                 onClick={() => {
                                     if (index <= currentQuestion) {
                                         goToQuestion(index);

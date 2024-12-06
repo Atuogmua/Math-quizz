@@ -16,13 +16,14 @@ const Quiz = () => {
     const [score, setScore] = useState(0);
     const [showPopup, setShowPopup] = useState(true);
     const [quizFinished, setQuizFinished] = useState(false);
-    const [answeredQuestions, setAnsweredQuestions] = useState([]); // Track answered questions
     const quizService = new QuizService();
     const quizList = quizService.getQuizList();
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isAnswered, setIsAnswered] = useState(false);
     const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
     const [currentResource, setCurrentResource] = useState(null);
+    const [answeredQuestions, setAnsweredQuestions] = useState(Array(quizList.length).fill(null)); // Array to track answers
+
 
     const initialQuizTime = 30 * 60;
 
@@ -51,15 +52,16 @@ const Quiz = () => {
             const questionScore = question.scores[selectedAnswer];
             setScore((prevScore) => prevScore + questionScore);
 
+            setAnsweredQuestions((prevState) => {
+                const newState = [...prevState];
+                newState[currentQuestion] = questionScore === 0 ? 'incorrect' : 'correct'; // Mark as 'incorrect' or 'correct'
+                return newState;
+            });
             // If the answer is wrong, get the explanation URL
             if (questionScore === 0) {
-                const explanation = resourceData[question.question]?.url;
-                if (explanation) {
-                    setCurrentResource({
-                        title: `Explanation for: ${question.question}`,
-                        url: explanation,
-                    });
-                }
+                const skillLevel = question.skill_level;
+                const resource = resourceData.find((res) => res.skill_level === skillLevel);
+                setCurrentResource(resource);
             } else {
                 setCurrentResource(null); // Clear resource if correct
             }
@@ -68,7 +70,11 @@ const Quiz = () => {
             setAnsweredQuestions((prev) => [...prev, currentQuestion]);
         }
 
+
+
         // Show correct answer for 2 seconds
+        setSelectedAnswer(null);
+        setIsAnswered(false);
         setShowCorrectAnswer(true);
         setTimeout(() => {
             setShowCorrectAnswer(false);
@@ -81,12 +87,12 @@ const Quiz = () => {
                 }
             });
 
-            setSelectedAnswer(null);
-            setIsAnswered(false);
         }, 1500);
     };
 
-
+    const handleCloseResource = () => {
+        setCurrentResource(null); // Close the resource panel
+    };
 
     const handleSkipQuestion = () => {
         if (currentQuestion < quizList.length - 1) {
@@ -134,7 +140,7 @@ const Quiz = () => {
                 )}
 
                 <div className="quiz-content">
-                    <ResourcePanel resource={currentResource} /> {/* Add resource panel here */}
+                    <ResourcePanel resource={currentResource} onClose={handleCloseResource} /> {/* Add resource panel here */}
 
                     <div className="quiz-question-wrapper">
                         {!quizFinished ? (
@@ -168,6 +174,7 @@ const Quiz = () => {
                         handleFinishQuiz={handleFinishQuiz}
                         handleAnswer={submitAnswer}
                         isAnswered={isAnswered}
+                        answeredQuestions = {answeredQuestions}
                     />
 
                 </div>
