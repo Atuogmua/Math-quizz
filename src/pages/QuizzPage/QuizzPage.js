@@ -70,6 +70,8 @@ const Quiz = () => {
             setAnsweredQuestions((prev) => [...prev, currentQuestion]);
         }
 
+
+
         // Show correct answer for 2 seconds
         setSelectedAnswer(null);
         setIsAnswered(false);
@@ -88,7 +90,9 @@ const Quiz = () => {
         }, 1500);
     };
 
-
+    const handleCloseResource = () => {
+        setCurrentResource(null); // Close the resource panel
+    };
 
     const handleSkipQuestion = () => {
         if (currentQuestion < quizList.length - 1) {
@@ -136,7 +140,7 @@ const Quiz = () => {
                 )}
 
                 <div className="quiz-content">
-                    <ResourcePanel resource={currentResource} /> {/* Add resource panel here */}
+                    <ResourcePanel resource={currentResource} onClose={handleCloseResource} /> {/* Add resource panel here */}
 
                     <div className="quiz-question-wrapper">
                         {!quizFinished ? (
