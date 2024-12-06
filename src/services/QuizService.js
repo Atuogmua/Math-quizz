@@ -4,9 +4,8 @@ import quizData from '../data/quiz.json';
 
 class QuizService {
     constructor(maxQuestions = 100) {
-        const shuffledQuizData = this.shuffleArray(quizData);
 
-        const limitedQuizData = shuffledQuizData.slice(0, maxQuestions);
+        const limitedQuizData = quizData.slice(0, maxQuestions);
 
         this.quizList = limitedQuizData.map(q => new QuizModel(
             q.question,
@@ -27,13 +26,13 @@ class QuizService {
         return this.quizList.length;
     }
 
-    shuffleArray(array) {
+    /*shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
         }
         return array;
-    }
+    }*/
 }
 
 export default QuizService;

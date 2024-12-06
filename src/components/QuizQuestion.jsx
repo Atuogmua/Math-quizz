@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/QuizQuestion.css';
 
-const QuizQuestion = ({ question, onAnswer }) => {
+const QuizQuestion = ({ question, onAnswer, showCorrectAnswer, isDisabled }) => {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isAnswered, setIsAnswered] = useState(false);
 
@@ -21,8 +21,15 @@ const QuizQuestion = ({ question, onAnswer }) => {
     };
 
     const getButtonColor = (index) => {
-        if (!isAnswered) return ''; // Default button color
-        return question.scores[index] === 1 ? 'correct' : 'incorrect';
+        if (showCorrectAnswer) {
+            return question.scores[index] === 1 ? 'correct' : 'incorrect';
+        }
+        if (!isAnswered) return selectedAnswer === index ? 'selected' : ''; // Apply 'selected' class only to the selected button
+        return selectedAnswer === index
+            ? question.scores[index] === 1
+                ? 'correct'
+                : 'incorrect'
+            : '';
     };
 
     return (
@@ -32,9 +39,9 @@ const QuizQuestion = ({ question, onAnswer }) => {
                 {question.options.map((option, index) => (
                     <button
                         key={index}
-                        className={`option-button ${selectedAnswer !== null ? getButtonColor(index) : ''}`}
+                        className={`option-button ${getButtonColor(index)}`}
                         onClick={() => handleAnswerClick(index)}
-                        disabled={isAnswered}
+                        disabled={isAnswered || showCorrectAnswer||isDisabled} // Disable during correct answer display
                     >
                         {option}
                     </button>
@@ -43,5 +50,6 @@ const QuizQuestion = ({ question, onAnswer }) => {
         </div>
     );
 };
+
 
 export default QuizQuestion;
