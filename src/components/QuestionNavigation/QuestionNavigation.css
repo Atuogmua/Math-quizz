@@ -97,4 +97,15 @@ button:disabled {
     color: #721c24;
 }
 
+.grid-item.correct-answer:hover {
+    background-color: #28a745; /* Green for correct answer */
+    color: black;
+}
+
+.grid-item.incorrect-answer:hover {
+    background-color: #dc3545; /* Red for incorrect answer */
+    color: black;
+}
+
+
 
