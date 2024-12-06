@@ -1,6 +1,7 @@
 /*ResourcePanel.css*/
 .resource-panel {
     position: absolute;
+    align-items: right;
     right: 0;
     top: 0;
     width: 50%;
@@ -34,6 +35,8 @@
     border: 1px solid #ddd;
     overflow: hidden;
     height: 100%; /* Adjust height as needed */
+    width: 100%;
+
 }
 
 .resource-iframe {

@@ -53,13 +53,9 @@ const Quiz = () => {
 
             // If the answer is wrong, get the explanation URL
             if (questionScore === 0) {
-                const explanation = resourceData[question.question]?.url;
-                if (explanation) {
-                    setCurrentResource({
-                        title: `Explanation for: ${question.question}`,
-                        url: explanation,
-                    });
-                }
+                const skillLevel = question.skill_level;
+                const resource = resourceData.find((res) => res.skill_level === skillLevel);
+                setCurrentResource(resource);
             } else {
                 setCurrentResource(null); // Clear resource if correct
             }
