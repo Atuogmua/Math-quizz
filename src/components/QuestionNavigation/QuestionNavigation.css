@@ -1,5 +1,4 @@
 .question-navigation {
-    padding: 5px;
     display: flex;
     flex-direction: row;  /* Stack items vertically */
     align-self: left;
@@ -7,7 +6,6 @@
     height: auto;  /* Allow height to adjust based on content */
     position: static;
     box-sizing: border-box;
-    gap: 5px;
 }
 
 .question-navigation.hidden .grid-container {
@@ -87,5 +85,16 @@ button:disabled {
     opacity: 0.6;
 }
 
+.grid-item.correct-answer {
+    background-color: #d4edda; /* Green for correct answer */
+    border: 2px solid #28a745;
+    color: #155724;
+}
+
+.grid-item.incorrect-answer {
+    background-color: #f8d7da; /* Red for incorrect answer */
+    border: 2px solid #dc3545;
+    color: #721c24;
+}
 
 

@@ -16,13 +16,14 @@ const Quiz = () => {
     const [score, setScore] = useState(0);
     const [showPopup, setShowPopup] = useState(true);
     const [quizFinished, setQuizFinished] = useState(false);
-    const [answeredQuestions, setAnsweredQuestions] = useState([]); // Track answered questions
     const quizService = new QuizService();
     const quizList = quizService.getQuizList();
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isAnswered, setIsAnswered] = useState(false);
     const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
     const [currentResource, setCurrentResource] = useState(null);
+    const [answeredQuestions, setAnsweredQuestions] = useState(Array(quizList.length).fill(null)); // Array to track answers
+
 
     const initialQuizTime = 30 * 60;
 
@@ -51,6 +52,11 @@ const Quiz = () => {
             const questionScore = question.scores[selectedAnswer];
             setScore((prevScore) => prevScore + questionScore);
 
+            setAnsweredQuestions((prevState) => {
+                const newState = [...prevState];
+                newState[currentQuestion] = questionScore === 0 ? 'incorrect' : 'correct'; // Mark as 'incorrect' or 'correct'
+                return newState;
+            });
             // If the answer is wrong, get the explanation URL
             if (questionScore === 0) {
                 const skillLevel = question.skill_level;
@@ -65,6 +71,8 @@ const Quiz = () => {
         }
 
         // Show correct answer for 2 seconds
+        setSelectedAnswer(null);
+        setIsAnswered(false);
         setShowCorrectAnswer(true);
         setTimeout(() => {
             setShowCorrectAnswer(false);
@@ -77,8 +85,6 @@ const Quiz = () => {
                 }
             });
 
-            setSelectedAnswer(null);
-            setIsAnswered(false);
         }, 1500);
     };
 
@@ -164,6 +170,7 @@ const Quiz = () => {
                         handleFinishQuiz={handleFinishQuiz}
                         handleAnswer={submitAnswer}
                         isAnswered={isAnswered}
+                        answeredQuestions = {answeredQuestions}
                     />
 
                 </div>
