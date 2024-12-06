@@ -6,6 +6,8 @@ import Popup from '../../components/Popup';
 import Timer from '../../components/Timer';
 import Button from '../../components/Button/Button';
 import QuestionNavigation from '../../components/QuestionNavigation/QuestionNavigation';
+import ResourcePanel from '../../components/ResourcePanel/ResourcePanel'; // New component
+import resourceData from '../../data/explanations.json'; // Assuming the file is in this path
 import '../../styles/Quiz.css';
 
 const Quiz = () => {
@@ -19,6 +21,8 @@ const Quiz = () => {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isAnswered, setIsAnswered] = useState(false);
     const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
+    const [currentResource, setCurrentResource] = useState(null);
+
 
 
 
@@ -46,6 +50,15 @@ const Quiz = () => {
             const question = quizList[currentQuestion];
             const questionScore = question.scores[selectedAnswer];
             setScore((prevScore) => prevScore + questionScore);
+
+            // If the answer is wrong, set the resource data
+            if (questionScore === 0) {
+                const skillLevel = question.skill_level;
+                const resource = resourceData.find((res) => res.skill_level === skillLevel);
+                setCurrentResource(resource);
+            } else {
+                setCurrentResource(null); // Clear resource if correct
+            }
         }
 
         // Show correct answer for 2 seconds
@@ -61,10 +74,9 @@ const Quiz = () => {
                 }
             });
 
-            // Reset selected answer and button states
             setSelectedAnswer(null);
             setIsAnswered(false);
-        }, 2000);
+        }, 1500);
     };
 
 
@@ -109,9 +121,8 @@ const Quiz = () => {
                 )}
 
                 <div className="quiz-content">
+                    <ResourcePanel resource={currentResource} /> {/* Add resource panel here */}
 
-
-                    {/* Quiz Question */}
                     <div className="quiz-question-wrapper">
                         {!quizFinished ? (
                             <QuizQuestion
@@ -129,7 +140,7 @@ const Quiz = () => {
                             </div>
                         )}
                     </div>
-                    {/* Question Navigation */}
+
                     <QuestionNavigation
                         questions={quizList}
                         currentQuestion={currentQuestion}
@@ -143,13 +154,11 @@ const Quiz = () => {
                         handleAnswer={submitAnswer}
                         isAnswered={isAnswered}
                     />
-
-
-
                 </div>
             </div>
         </div>
     );
+
 };
 
 export default Quiz;
