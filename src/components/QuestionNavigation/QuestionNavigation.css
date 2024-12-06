@@ -82,5 +82,10 @@ button:disabled {
     background-color: #007bff;
 }
 
+.grid-item.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
 
 

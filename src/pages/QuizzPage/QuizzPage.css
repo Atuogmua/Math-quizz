@@ -6,3 +6,9 @@
 .quiz-question-wrapper {
     flex: 1;
 }
+
+.grid-item.visited {
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    cursor: pointer;
+}

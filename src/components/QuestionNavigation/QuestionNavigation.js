@@ -3,35 +3,48 @@ import PropTypes from 'prop-types';
 import Button from "../Button/Button";
 import './QuestionNavigation.css';
 
-const QuestionNavigation = ({ questions, currentQuestion, goToQuestion, hidden, toggleMenu, quizList, quizFinished, handleSkipQuestion, handleFinishQuiz, handleAnswer, isAnswered}) => {
+const QuestionNavigation = ({
+                                questions,
+                                currentQuestion,
+                                goToQuestion,
+                                hidden,
+                                toggleMenu,
+                                quizList,
+                                quizFinished,
+                                handleSkipQuestion,
+                                handleFinishQuiz,
+                                handleAnswer,
+                                isAnswered
+                            }) => {
     return (
         <div className={`question-navigation ${hidden ? 'hidden' : ''}`}>
-            <div class="button-wrapper"><button className="toggle-button" onClick={toggleMenu}>
-                {hidden ? 'Show Menu' : 'Hide Menu'}
-            </button>
-            {!hidden && (
-                <div className="grid-container">
-                    {questions.map((_, index) => (
-                        <div
-                            key={index}
-                            className={`grid-item ${index === currentQuestion ? 'active' : ''}`}
-                            onClick={() => goToQuestion(index)}
-                        >
-                            {index + 1}
-                        </div>
-                    ))}
-                </div>
-            )}
-
-
+            <div className="button-wrapper">
+                <button className="toggle-button" onClick={toggleMenu}>
+                    {hidden ? 'Show Menu' : 'Hide Menu'}
+                </button>
+                {!hidden && (
+                    <div className="grid-container">
+                        {questions.map((_, index) => (
+                            <div
+                                key={index}
+                                className={`grid-item ${index === currentQuestion ? 'active' : ''} ${index > currentQuestion ? 'disabled' : ''}`}
+                                onClick={() => {
+                                    if (index <= currentQuestion) {
+                                        goToQuestion(index);
+                                    }
+                                }}
+                            >
+                                {index + 1}
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
             <Button
                 label="Next"
-                onClick={() => handleAnswer()} // This calls `submitAnswer`
+                onClick={() => handleAnswer()} // Call `handleAnswer` on click
                 disabled={!isAnswered} // Disable until an answer is selected
             />
-
-
             <Button
                 label="Skip"
                 onClick={() => handleSkipQuestion()}
@@ -42,7 +55,6 @@ const QuestionNavigation = ({ questions, currentQuestion, goToQuestion, hidden, 
                 onClick={() => handleFinishQuiz()}
             />
         </div>
-
     );
 };
 
@@ -52,6 +64,12 @@ QuestionNavigation.propTypes = {
     goToQuestion: PropTypes.func.isRequired,
     hidden: PropTypes.bool.isRequired,
     toggleMenu: PropTypes.func.isRequired,
+    quizList: PropTypes.array.isRequired,
+    quizFinished: PropTypes.bool.isRequired,
+    handleSkipQuestion: PropTypes.func.isRequired,
+    handleFinishQuiz: PropTypes.func.isRequired,
+    handleAnswer: PropTypes.func.isRequired,
+    isAnswered: PropTypes.bool.isRequired,
 };
 
 export default QuestionNavigation;
