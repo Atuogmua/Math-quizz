@@ -1,6 +1,7 @@
 /*QuizQuestion.jsx*/
 import React, { useEffect, useState } from 'react';
 import '../styles/QuizQuestion.css';
+import Button from "./Button/Button";
 
 const QuizQuestion = ({ question, onAnswer, showCorrectAnswer, isDisabled }) => {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -12,25 +13,33 @@ const QuizQuestion = ({ question, onAnswer, showCorrectAnswer, isDisabled }) => 
         setIsAnswered(false);
     }, [question]);
 
+    useEffect(() => {
+        console.log("Selected answer:", selectedAnswer);
+    }, [selectedAnswer]);
+
+
     const handleAnswerClick = (index) => {
         if (isAnswered) return; // Prevent multiple clicks
-
+        console.log("Selected index:", index); // Debug log
         setSelectedAnswer(index);
         setIsAnswered(true);
         onAnswer(index); // Notify parent component
     };
 
+
     const getButtonColor = (index) => {
         if (showCorrectAnswer) {
             return question.scores[index] === 1 ? 'correct' : 'incorrect';
         }
-        if (!isAnswered) return selectedAnswer === index ? 'selected' : ''; // Apply 'selected' class only to the selected button
+        console.log("Button index:", index, "Selected answer:", selectedAnswer);
+        if (!isAnswered && selectedAnswer === index) return 'selected';
         return selectedAnswer === index
             ? question.scores[index] === 1
                 ? 'correct'
                 : 'incorrect'
             : '';
     };
+
 
     return (
         <div className="quiz-question">

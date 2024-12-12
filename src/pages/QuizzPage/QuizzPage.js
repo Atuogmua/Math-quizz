@@ -54,41 +54,44 @@ const Quiz = () => {
 
             setAnsweredQuestions((prevState) => {
                 const newState = [...prevState];
-                newState[currentQuestion] = questionScore === 0 ? 'incorrect' : 'correct'; // Mark as 'incorrect' or 'correct'
+                newState[currentQuestion] = questionScore === 0 ? 'incorrect' : 'correct';
                 return newState;
             });
-            // If the answer is wrong, get the explanation URL
+
+            // Check if the answer is wrong and fetch the explanation
             if (questionScore === 0) {
-                const skillLevel = question.skill_level;
-                const resource = resourceData.find((res) => res.skill_level === skillLevel);
-                setCurrentResource(resource);
+                const explanationTitles = question.explanation; // Array of explanation titles
+                const resources = explanationTitles.map((title) =>
+                    resourceData.find((res) => res.title === title)
+                ).filter(Boolean); // Filter out undefined if no match found
+
+                if (resources.length > 0) {
+                    setCurrentResource(resources[0]); // Show the first matching explanation
+                } else {
+                    setCurrentResource(null);
+                }
             } else {
-                setCurrentResource(null); // Clear resource if correct
+                setCurrentResource(null); // Clear resource if the answer is correct
             }
 
-            // Mark the current question as answered
-            setAnsweredQuestions((prev) => [...prev, currentQuestion]);
+            // Handle navigation and state updates
+            setSelectedAnswer(null);
+            setIsAnswered(false);
+            setShowCorrectAnswer(true);
+            setTimeout(() => {
+                setShowCorrectAnswer(false);
+                setCurrentQuestion((prevQuestion) => {
+                    if (prevQuestion + 1 < quizList.length) {
+                        return prevQuestion + 1;
+                    } else {
+                        setQuizFinished(true);
+                        return prevQuestion;
+                    }
+                });
+            }, 1500);
         }
-
-
-
-        // Show correct answer for 2 seconds
-        setSelectedAnswer(null);
-        setIsAnswered(false);
-        setShowCorrectAnswer(true);
-        setTimeout(() => {
-            setShowCorrectAnswer(false);
-            setCurrentQuestion((prevQuestion) => {
-                if (prevQuestion + 1 < quizList.length) {
-                    return prevQuestion + 1;
-                } else {
-                    setQuizFinished(true);
-                    return prevQuestion;
-                }
-            });
-
-        }, 1500);
     };
+
 
     const handleCloseResource = () => {
         setCurrentResource(null); // Close the resource panel
