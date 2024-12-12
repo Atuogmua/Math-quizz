@@ -1,13 +1,14 @@
+/*ResoursePanel.js*/
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ResourcePanel.css';
 
 const ResourcePanel = ({ resource, onClose }) => {
-    if (!resource) return null; // Do not render if no resource
+    if (!resource) return null;
 
     return (
         <div className="resource-panel">
-            <button className="close-button" onClick={onClose}>X</button> {/* Close button */}
+            <button className="close-button" onClick={onClose}>X</button>
             <div className="resource-preview">
                 <iframe
                     src={resource.url}

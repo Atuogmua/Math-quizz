@@ -105,7 +105,7 @@
 "totalScore": 1,
 "skill_level": 3,
 "challenge_level": 2,
-"explanation": ["Definition of Exponentiation"]
+"explanation": ["Exponent"]
 },
 {
 "question": "sqrt(49)",
@@ -123,7 +123,7 @@
 "totalScore": 1,
 "skill_level": 5,
 "challenge_level": 3,
-"explanation": ["Definition of Modulus"]
+"explanation": ["Remainder"]
 },
 {
 "question": "3 * 4 + 2",
@@ -222,7 +222,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "250 + 59",
@@ -231,7 +231,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Addition"]
   },
   {
     "question": "324 - 187",
@@ -240,7 +240,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "1 - 2",
@@ -249,7 +249,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "2 - 9",
@@ -258,25 +258,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 2,
-    "explanation": []
-  },
-  {
-    "question": "8 - 18",
-    "options": ["-10", "10", "-8", "8"],
-    "scores": [1, 0, 0, 0],
-    "totalScore": 1,
-    "skill_level": 1,
-    "challenge_level": 3,
-    "explanation": []
-  },
-  {
-    "question": "12 - 27",
-    "options": ["-15", "15", "13", "14"],
-    "scores": [1, 0, 0, 0],
-    "totalScore": 1,
-    "skill_level": 1,
-    "challenge_level": 4,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "15 - 45",
@@ -285,7 +267,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 5,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "33 - 53",
@@ -294,7 +276,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 6,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "67 - 84",
@@ -303,7 +285,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "90 - 127",
@@ -312,7 +294,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "130 - 250",
@@ -321,7 +303,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "210 - 324",
@@ -330,7 +312,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "1 - 2",
@@ -339,7 +321,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "2 - 9",
@@ -348,16 +330,8 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 2,
-    "explanation": []
-  },{
-  "question": "8 - 18",
-  "options": ["-10", "10", "-8", "8"],
-  "scores": [1, 0, 0, 0],
-  "totalScore": 1,
-  "skill_level": 1,
-  "challenge_level": 3,
-  "explanation": []
-},
+    "explanation": ["Definition of Subtraction"]
+  },
   {
     "question": "12 - 27",
     "options": ["-15", "15", "13", "14"],
@@ -365,16 +339,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 4,
-    "explanation": []
-  },
-  {
-    "question": "15 - 45",
-    "options": ["30", "-30", "28", "29"],
-    "scores": [0, 1, 0, 0],
-    "totalScore": 1,
-    "skill_level": 1,
-    "challenge_level": 5,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "33 - 53",
@@ -383,7 +348,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 6,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "67 - 84",
@@ -392,7 +357,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "90 - 127",
@@ -401,7 +366,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "130 - 250",
@@ -410,7 +375,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "210 - 324",
@@ -419,7 +384,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "90 * 3",
@@ -428,7 +393,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "105 / 5",
@@ -437,7 +402,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },
   {
     "question": "135 * 2",
@@ -446,7 +411,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "180 / 6",
@@ -455,7 +420,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },
   {
     "question": "96 * 4",
@@ -464,7 +429,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "140 / 7",
@@ -473,7 +438,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },
   {
     "question": "150 * 3",
@@ -482,7 +447,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "200 / 8",
@@ -491,7 +456,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },
   {
     "question": "72 * 5",
@@ -500,7 +465,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "175 / 5",
@@ -509,7 +474,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },{
   "question": "8 - 18",
   "options": ["-10", "10", "-8", "8"],
@@ -517,35 +482,8 @@
   "totalScore": 1,
   "skill_level": 1,
   "challenge_level": 3,
-  "explanation": []
+  "explanation": ["Definition of Subtraction"]
 },
-  {
-    "question": "12 - 27",
-    "options": ["-15", "15", "13", "14"],
-    "scores": [1, 0, 0, 0],
-    "totalScore": 1,
-    "skill_level": 1,
-    "challenge_level": 4,
-    "explanation": []
-  },
-  {
-    "question": "15 - 45",
-    "options": ["30", "-30", "28", "29"],
-    "scores": [0, 1, 0, 0],
-    "totalScore": 1,
-    "skill_level": 1,
-    "challenge_level": 5,
-    "explanation": []
-  },
-  {
-    "question": "33 - 53",
-    "options": ["-20", "20", "18", "19"],
-    "scores": [1, 0, 0, 0],
-    "totalScore": 1,
-    "skill_level": 1,
-    "challenge_level": 6,
-    "explanation": []
-  },
   {
     "question": "67 - 84",
     "options": ["17", "-17", "15", "16"],
@@ -553,7 +491,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "90 - 127",
@@ -562,7 +500,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "130 - 250",
@@ -571,7 +509,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "210 - 324",
@@ -580,7 +518,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Subtraction"]
   },
   {
     "question": "90 * 3",
@@ -589,7 +527,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "105 / 5",
@@ -598,7 +536,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },
   {
     "question": "135 * 2",
@@ -607,7 +545,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "180 / 6",
@@ -616,7 +554,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },
   {
     "question": "96 * 4",
@@ -625,7 +563,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "140 / 7",
@@ -634,7 +572,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },
   {
     "question": "150 * 3",
@@ -643,7 +581,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "200 / 8",
@@ -652,7 +590,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },
   {
     "question": "72 * 5",
@@ -661,7 +599,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Multiplication"]
   },
   {
     "question": "175 / 5",
@@ -670,7 +608,7 @@
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Definition of Division"]
   },
   {
     "question": "sqrt(64)",
@@ -679,7 +617,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(81)",
@@ -688,7 +626,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(100)",
@@ -697,7 +635,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(121)",
@@ -706,7 +644,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(225)",
@@ -715,7 +653,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(256)",
@@ -724,7 +662,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(289)",
@@ -733,7 +671,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(324)",
@@ -742,7 +680,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(361)",
@@ -751,7 +689,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(400)",
@@ -760,7 +698,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(441)",
@@ -769,7 +707,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(484)",
@@ -778,7 +716,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(529)",
@@ -787,7 +725,7 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "sqrt(576)",
@@ -796,16 +734,16 @@
     "totalScore": 1,
     "skill_level": 4,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Square Roots"]
   },
   {
     "question": "10 % 3",
     "options": ["1", "2", "3", "4"],
-    "scores": [0, 1, 0, 0],
+    "scores": [1, 0, 0, 0],
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 1,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "25 % 4",
@@ -814,7 +752,7 @@
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 2,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "45 % 8",
@@ -823,7 +761,7 @@
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 3,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "50 % 7",
@@ -832,7 +770,7 @@
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 4,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "75 % 6",
@@ -841,7 +779,7 @@
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 5,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "100 % 9",
@@ -850,7 +788,7 @@
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 6,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "200 % 11",
@@ -859,7 +797,7 @@
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "300 % 13",
@@ -868,7 +806,7 @@
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "400 % 14",
@@ -877,7 +815,7 @@
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "500 % 15",
@@ -886,7 +824,7 @@
     "totalScore": 1,
     "skill_level": 5,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Remainder"]
   },
   {
     "question": "3 + 4 * 2",
@@ -895,7 +833,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 1,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "5 * 2 + 3",
@@ -904,7 +842,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 1,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(5 + 7) / 2",
@@ -913,7 +851,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 2,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "4 * (3 + 2)",
@@ -922,7 +860,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 2,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "3 * 4 - 2",
@@ -931,7 +869,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 3,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "8 / 2 + 6",
@@ -940,7 +878,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 3,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(8 + 2) % 3",
@@ -949,7 +887,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 4,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "4 * (2 + 1) - 5",
@@ -958,7 +896,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 4,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "15 - (4 * 3)",
@@ -967,7 +905,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 5,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "18 / (9 - 3)",
@@ -976,7 +914,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 5,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(4 * 2) + 6 / 2",
@@ -985,7 +923,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 6,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "9 * 2 - (6 + 3)",
@@ -994,7 +932,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 6,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "6 * 3 - 4 / 2",
@@ -1003,7 +941,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(4 + 8) * 2 - 5",
@@ -1012,7 +950,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "12 + 5 * (8 - 3)",
@@ -1021,7 +959,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "45 * (12 - 8) + 25",
@@ -1030,7 +968,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "28 * 3 - (14 + 5) * 2",
@@ -1039,7 +977,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "15 * (7 + 3) - 50",
@@ -1048,7 +986,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(35 - 5) * 2 + 40",
@@ -1057,7 +995,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "5 * (9 + 6) - 3 * (8 - 2)",
@@ -1066,7 +1004,7 @@
     "totalScore": 1,
     "skill_level": 6,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "2 * (3 + 4) - 3 * 2",
@@ -1075,7 +1013,7 @@
     "totalScore": 1,
     "skill_level": 7,
     "challenge_level": 1,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "4 + 5 * (3 - 1) - 2",
@@ -1084,7 +1022,7 @@
     "totalScore": 1,
     "skill_level": 7,
     "challenge_level": 2,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(6 + 4) * 2 - 3 * (2 + 1)",
@@ -1093,7 +1031,7 @@
     "totalScore": 1,
     "skill_level": 7,
     "challenge_level": 3,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "3 * (5 - 2) + 6 / 3",
@@ -1102,7 +1040,7 @@
     "totalScore": 1,
     "skill_level": 7,
     "challenge_level": 4,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "8 * 2 + 4 * (5 - 3)",
@@ -1111,7 +1049,7 @@
     "totalScore": 1,
     "skill_level": 7,
     "challenge_level": 5,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "5 * (4 + 6) - 7 * 2",
@@ -1120,7 +1058,7 @@
     "totalScore": 1,
     "skill_level": 7,
     "challenge_level": 6,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(9 - 3) * 4 + 6 * (2 + 1)",
@@ -1129,7 +1067,7 @@
     "totalScore": 1,
     "skill_level": 7,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "3 * (7 + 2) - 4 * (5 - 1)",
@@ -1138,7 +1076,7 @@
     "totalScore": 1,
     "skill_level": 7,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "6 * (5 - 1) + 8 / 2 * (7 - 3)",
@@ -1147,7 +1085,7 @@
     "totalScore": 1,
     "skill_level": 7,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((6 + 2) * 3 - 4) / 2 + (5 - 1) * (7 - 3)",
@@ -1156,7 +1094,7 @@
     "totalScore": 1,
     "skill_level": 8,
     "challenge_level": 1,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((9 - 3) * 4 + 3 * (2 + 1)) / (3 * 2 - 1)",
@@ -1165,7 +1103,7 @@
     "totalScore": 1,
     "skill_level": 8,
     "challenge_level": 2,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((7 + 2) * 3 - 4 * (5 - 1)) / (6 - 2 + 1)",
@@ -1174,7 +1112,7 @@
     "totalScore": 1,
     "skill_level": 8,
     "challenge_level": 3,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(((5 * 4) + 6) / 2 - 3) * (8 - 2 * 2)",
@@ -1183,7 +1121,7 @@
     "totalScore": 1,
     "skill_level": 8,
     "challenge_level": 4,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(2 * (9 + 3) - 2 * (7 * 2)) / (4 * 2 - 1)",
@@ -1192,7 +1130,7 @@
     "totalScore": 1,
     "skill_level": 8,
     "challenge_level": 5,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((12 - 4) * (3 + 1) - 4 * 6) / (3 * (5 - 3))",
@@ -1201,7 +1139,7 @@
     "totalScore": 1,
     "skill_level": 8,
     "challenge_level": 6,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((6 * 2) - 8) / (12 / 4) + (5 - 3) * (7 - 3)",
@@ -1210,7 +1148,7 @@
     "totalScore": 1,
     "skill_level": 8,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((4 * (9 + 3) - 2 * (7 * 2)) / (2 * (2 + 1))) * (6 - 3)",
@@ -1219,7 +1157,7 @@
     "totalScore": 1,
     "skill_level": 8,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((3^2 + 4^2) * 2 - 5) / (sqrt(9) + 1) + 6",
@@ -1228,7 +1166,7 @@
     "totalScore": 1,
     "skill_level": 9,
     "challenge_level": 1,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "4 * (7 - 2) + (6 / 2) * (log10(1000) + 1)",
@@ -1237,7 +1175,7 @@
     "totalScore": 1,
     "skill_level": 9,
     "challenge_level": 2,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((8 + 4) / 2 - 3) * 5 - 2 * (log2(32))",
@@ -1246,7 +1184,7 @@
     "totalScore": 1,
     "skill_level": 9,
     "challenge_level": 3,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(6 * (3 + 1) - 2 * (5 - 1)) / (log10(100) * 2)",
@@ -1255,7 +1193,7 @@
     "totalScore": 1,
     "skill_level": 9,
     "challenge_level": 4,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(((6 * 2) - 8) / (12 / 4) + 3) * 2 * (log2(16))",
@@ -1264,7 +1202,7 @@
     "totalScore": 1,
     "skill_level": 9,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(7 * (6 - 2) + (9 + 3) / 2) * 2 - (4 * sqrt(9))",
@@ -1273,7 +1211,7 @@
     "totalScore": 1,
     "skill_level": 9,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((sqrt(16) + 2) * 3 - 4) / 2 + (5 - 1) * (7 - 3) + log10(100)",
@@ -1282,7 +1220,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 1,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((9 - 3) * 4 + 3 * (2 + 1)) / (3 * 2 - 1) + (log2(64) - 4)",
@@ -1291,7 +1229,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 2,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(log10(100) * (7 + 2) * 3 - 4 * (5 - 1)) / (6 - 2 + 1)",
@@ -1300,7 +1238,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 3,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((5 * sqrt(9) + 6) / 2 - 3) * (8 - 2 * 2)",
@@ -1309,7 +1247,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 4,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((2 * (9 + 3) - 2 * (7 * 2)) / (4 * 2 - 1)) + pow(2, 3)",
@@ -1318,7 +1256,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 5,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((12 - 4) * (3 + 1) - 4 * 6) / (3 * (5 - 3)) + sqrt(49)",
@@ -1327,7 +1265,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 6,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((6 * 2) - 8) / (12 / 4) + (5 - 3) * (7 - 3) * log2(8)",
@@ -1336,7 +1274,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 7,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((4 * (9 + 3) - 2 * (7 * 2)) / (2 * (2 + 1))) * (6 - 3) + pow(2, 4)",
@@ -1345,7 +1283,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 8,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((3^2 + 4^2) * 2 - 5) / (sqrt(9) + 1) + 6 * pow(2, 3)",
@@ -1354,7 +1292,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 9,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "4 * (7 - 2) + (6 / 2) * (log10(1000) + 1) + pow(2, 4)",
@@ -1363,7 +1301,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "((8 + 4) / 2 - 3) * 5 - 2 * (log2(32)) + pow(2, 4)",
@@ -1372,7 +1310,7 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
     "question": "(6 * (3 + 1) - 2 * (5 - 1)) / (log10(100) * 2) + pow(2, 4)",
@@ -1381,62 +1319,52 @@
     "totalScore": 1,
     "skill_level": 10,
     "challenge_level": 10,
-    "explanation": []
+    "explanation": ["Order Of Operations"]
   },
   {
-    "question": "What is the result of 7 + 8?",
+    "question": "7 + 8",
     "options": ["15", "14", "16", "13"],
     "scores": [1, 0, 0, 0],
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": ["Addition"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addition"],
-    "explanation_titles": ["Addition"]
+    "explanation": ["Definition of Addition"]
   },
   {
-    "question": "What is the result of 15 + 9?",
+    "question": "15 + 9",
     "options": ["24", "23", "25", "22"],
     "scores": [1, 0, 0, 0],
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": ["Addition"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addition"],
-    "explanation_titles": ["Addition"]
+    "explanation": ["Definition of Addition"]
   },
   {
-    "question": "What is the sum of 23 + 12?",
+    "question": "23 + 12",
     "options": ["35", "34", "36", "33"],
     "scores": [1, 0, 0, 0],
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": ["Addition"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addition"],
-    "explanation_titles": ["Addition"]
+    "explanation": ["Definition of Addition"]
   },
   {
-    "question": "What is the result of 67 + 89?",
+    "question": "67 + 89",
     "options": ["156", "157", "158", "155"],
     "scores": [1, 0, 0, 0],
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 2,
-    "explanation": ["Addition"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addition"],
-    "explanation_titles": ["Addition"]
+    "explanation": ["Definition of Addition"]
   },
   {
-    "question": "What is the sum of 52 + 48?",
+    "question": "52 + 48",
     "options": ["100", "101", "102", "99"],
     "scores": [1, 0, 0, 0],
     "totalScore": 1,
     "skill_level": 2,
     "challenge_level": 2,
-    "explanation": ["Addition"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addition"],
-    "explanation_titles": ["Addition"]
+    "explanation": ["Definition of Addition"]
   },
   {
     "question": "15 - 7",
@@ -1454,9 +1382,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": ["Addend"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addend"],
-    "explanation_titles": ["Addend"]
+    "explanation": ["Addend"]
   },
   {
     "question": "In the equation 15 + 25 = 40, which number is the addend?",
@@ -1465,9 +1391,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": ["Addend"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addend"],
-    "explanation_titles": ["Addend"]
+    "explanation": ["Addend"]
   },
   {
     "question": "Which of the following is an addend in the equation 12 + 18 = 30?",
@@ -1476,9 +1400,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": ["Addend"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addend"],
-    "explanation_titles": ["Addend"]
+    "explanation": ["Addend"]
   },
   {
     "question": "What is the addend in the equation 45 + 60 = 105?",
@@ -1487,9 +1409,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": ["Addend"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addend"],
-    "explanation_titles": ["Addend"]
+    "explanation": ["Addend"]
   },
   {
     "question": "In the equation 100 + 50 = 150, which number is the addend?",
@@ -1498,9 +1418,7 @@
     "totalScore": 1,
     "skill_level": 1,
     "challenge_level": 1,
-    "explanation": ["Addend"],
-    "explanation_urls": ["https://www.splashlearn.com/math-vocabulary/addition/addend"],
-    "explanation_titles": ["Addend"]
+    "explanation": ["Addend"]
   },
   {
     "question": "Arrange the numbers in ascending order: 9, 4, 7, 1",
