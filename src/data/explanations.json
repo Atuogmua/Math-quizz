@@ -220,7 +220,7 @@
     "url": "https://www.splashlearn.com/math-vocabulary/distance-between-two-points"
   },
   {
-    "title": "Division",
+    "title": "Definition of Division",
     "url": "https://www.splashlearn.com/math-vocabulary/division/division"
   },
   {
@@ -270,5 +270,30 @@
   {
     "title": "Least common multiple",
     "url": "https://www.splashlearn.com/math-vocabulary/algebra/least-common-multiple"
+  },
+  {
+    "title": "Definition of Multiplication",
+    "url": "https://www.splashlearn.com/math-vocabulary/multiplication/multiplication"
+  }
+  ,
+  {
+    "title": "Definition of Square Root",
+    "url": "https://www.splashlearn.com/math-vocabulary/algebra/square-and-square-roots"
+  },
+  {
+    "title": "Remainder",
+    "url": "https://www.splashlearn.com/math-vocabulary/division/remainder"
+  },
+  {
+    "title": "Order of Operations",
+    "url": "https://www.splashlearn.com/math-vocabulary/algebra/order-of-operations"
+  },
+  {
+    "title": "Definition of Subtraction",
+    "url": "https://www.splashlearn.com/math-vocabulary/subtraction/subtract"
+  },
+  {
+    "title": "Exponent",
+    "url": "https://www.splashlearn.com/math-vocabulary/algebra/exponent"
   }
 ]

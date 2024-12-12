@@ -7,11 +7,6 @@
     transition: background-color 0.3s ease;
 }
 
-.option-button.selected {
-    background-color: #ffcc00; /* Yellow or any color for the selected state */
-    color: #000; /* Adjust text color for contrast */
-}
-
 .option-button.correct {
     background-color: #4CAF50; /* Green for correct answers */
     color: white;
@@ -32,6 +27,15 @@
     background-color: #F44336;
     cursor: not-allowed; /* Show not-allowed cursor */
 }
+
+.option-button:focus {
+    background-color: #ffcc00; /* Yellow or any color for the selected state */
+    color: #000; /* Adjust text color for contrast */
+    transition: background-color 0.3s ease;
+    opacity: 1;
+}
+
+
 
 .option-button:disabled {
     opacity: 0.6;
@@ -66,4 +70,14 @@
 .quiz-question button:hover {
     background-color: #dbd67b;
     color: white;
+}
+
+.quiz-question button:visited {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.quiz-question button:focus {
+    background-color: #ffcc00;
+    color: black;
 }
